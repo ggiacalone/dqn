@@ -1,0 +1,10 @@
+- try 512 hidden nodes in model layers.
+- what are our minibatch sizes, try 32 as DQN paper?
+- check epsilon greedy, annealead linearly from 1.0 to 0.1
+- check replay memory amout, try larger?
+- try RMSProp optimizer, as DQN paper?
+- systematic grid search of all hyperparameters?
+- check discount rate, use .99?
+- memory buffer,  A more sophisticated sampling strategy
+might emphasize transitions from whic. see https://arxiv.org/pdf/1511.05952.pdf for prioritized experience replay.
+- check hyperparameter list at: https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf
