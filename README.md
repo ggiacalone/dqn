@@ -5,7 +5,7 @@
 # Description
 This project is a PyTorch implementation of a Deep Q Learning Network, as described in the [Human-level control through deep reinforcement learning](http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html) paper, also referred to as DQN. It also includes an implementation of Double DQN, as described in the [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) paper, which can be enabled with the use of a parameter.
 
-The code was largely based on the reference code provided by Udacity [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/dqn)
+The code was largely based on the reference code provided by Udacity [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/dqn).
 
 # Project 1: Navigation
 
@@ -37,9 +37,19 @@ The task is episodic, and in order to solve the environment, your agent must get
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+2. Place the file in the root directory of this repository, and unzip (or decompress) the file. 
+
+### Dependencies
+
+- Pytorch, installation instructions are [here](https://pytorch.org/get-started/locally/). Tested on version 0.4.1.post2.
+
+- Unity Machine Learning Agents Toolkit, installation instructions are [here](https://github.com/Unity-Technologies/ml-agents).
+
+- pip install requirements.txt for the remaining dependencies.
 
 ### Instructions
+
+Installation
 
 Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
 
