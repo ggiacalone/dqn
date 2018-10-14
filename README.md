@@ -2,6 +2,11 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
 
+# Description
+This project is a PyTorch implementation of a Deep Q Learning Network, as described in the [Human-level control through deep reinforcement learning](http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html) paper, also referred to as DQN. It also includes an implementation of Double DQN, as described in the [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461) paper, which can be enabled with the use of a parameter.
+
+The code was largely based on the reference code provided by Udacity [here] https://github.com/udacity/deep-reinforcement-learning/tree/master/dqn
+
 # Project 1: Navigation
 
 ### Introduction
