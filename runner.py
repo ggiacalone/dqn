@@ -27,6 +27,30 @@ class Runner():
         self.brain_name = self.env.brain_names[0]
         self.brain = self.env.brains[self.brain_name]
 
+    def test(self, run_id = 5):
+        agent = Agent(state_size=37, action_size=4, seed=0)
+
+        run_dir = "results/{}".format(run_id)
+
+        # load the weights from file
+        agent.qnetwork_local.load_state_dict(torch.load("{}/checkpoint.pth".format(run_dir)))
+
+        for i in range(5):
+
+            env_info = self.env.reset(train_mode=False)[self.brain_name] # reset the environment
+            state = env_info.vector_observations[0]
+
+            for j in range(50):
+                action = agent.act(state)
+                
+                env_info = self.env.step(action)[self.brain_name]        # send the action to the environment
+                next_state = env_info.vector_observations[0]   # get the next state
+                reward = env_info.rewards[0]                   # get the reward
+                done = env_info.local_done[0]                  # see if episode has finished
+
+                if done:
+                    break
+
     def run(self, run_id = 1, n_episodes=2000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_decay=0.995, lr=5e-4, use_double_dqn=False, use_soft_update=True):
         start = time.time()
 

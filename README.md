@@ -53,7 +53,11 @@ Installation
 
 Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
 
+For example's on how to run the code in this repository, load `Report.ipynb` in a jupyter notebook.
+
 ### (Optional) Challenge: Learning from Pixels
+
+The following is an optional challenge to use a conv net with images as direct input, however this has not been implemented yet.
 
 After you have successfully completed the project, if you're looking for an additional challenge, you have come to the right place!  In the project, your agent learned from information such as its velocity, along with ray-based perception of objects around its forward direction.  A more challenging task would be to learn directly from pixels!
 
